@@ -1,0 +1,44 @@
+.flex {
+  display: flex;
+  background: var(--primaryColor);
+}
+
+/*
+.flex > * {
+    border: 1px solid plum !important;
+    flex-grow: 2;
+    flex-basis: 100px;
+    padding: 1rem !important; 
+
+    flex-grow: ;Capacidad de agrandamiento 0 (nada) 1 (100%)
+    flex-shrink: ; Capacidad de achicamiento
+    flex-basis: ; Base que por defecto tienen los elementos
+}
+*/
+
+.flex > div {
+  border: 1px solid plum;
+  /*
+    flex-grow: 1;
+    flex-basis: 100%;
+    */
+  flex: 1;
+  /*
+    flex-shrink: 1;
+    flex-basis: 0%;
+    flex-grow: 1;
+    */
+}
+
+.flex > img {
+  inline-size: 400px;
+  flex-shrink: 0;
+}
+
+/*
+.flex > p {
+    flex-grow: 1;
+    border: 1px solid yellow !important;
+    flex-basis: 50px;
+}
+*/
